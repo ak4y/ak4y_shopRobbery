@@ -1,0 +1,249 @@
+@font-face {
+	font-family: 'DS-Digital';
+	src: url('font/DS-Digital.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Thin-Pencil-Handwriting';
+	src: url('font/Eastwood.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'hapole_Pencil';
+	src: url('font/hapole_pencil.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body { 
+	overflow: hidden; 
+	display: none;
+}
+
+
+    ::selection {color: none;background: none;}
+
+    /* For Mozilla Firefox */
+
+    ::-moz-selection {
+
+        color: none;
+
+        background: none;
+
+    }
+
+
+#display {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 1920px;
+	height: 1080px;
+	background-color: transparent;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+#numField {
+	fill: url(#numField_A0_Rectangle_2_pattern);
+}
+.numField {
+	overflow: visible;
+	width: 378px;
+	height: 288px;
+	left: 67px;
+	top: 58px;
+}
+.safe{
+    background: url("img/bg.png");
+    height: 1080px;
+    width: 1400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display:none;
+	z-index:22;
+}
+@media screen and (max-height: 768px) {
+ .safe{
+	 transform:scale(0.8);
+ }
+ .minisafe{
+	 transform:scale(0.8);
+ }
+}
+.minisafe{
+	background: url("img/safe.png");
+	width: 377px;
+	height: 573px;
+	background-size: cover;
+	position: absolute;
+	margin: 0 0 25px 0;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	z-index:33;
+}
+
+.ortala{
+	animation: ortala 0.1s;
+	animation-fill-mode: forwards;
+}
+@keyframes ortala {
+  100%{
+		margin: auto;
+	}
+}
+
+.inputbg{
+	background-color: #c9dddc;
+	height: 70px;
+	width: 300px;
+	z-index: 1;
+	position: absolute;
+	top: 340px;
+	left: 325px;
+}
+
+
+
+.pass{
+	top: 93px;
+	background: transparent;
+	border: none;
+	position: relative;
+	left: 140px;
+	width: 250px;
+	transform: rotate(-0.5deg);
+	height: 50px;
+	font-family:'DS-Digital';
+	font-size:3em;
+	text-align:center;
+	margin:0;
+}
+
+.postit{
+	background-image: url('img/postitt.png');
+	background-repeat: none;
+	width: 484px;
+	height: 387px;
+	position: relative;
+	left: 640px;
+	font-family:'Thin-Pencil-Handwriting';
+	margin: 0;
+}
+
+
+.textdeneme{
+	font-family: 'hapole_Pencil';
+    transform: rotate(-2.5deg);
+    margin-top: 22px;
+    font-size: 35px;
+    margin-left: 115px;
+    line-height: 145px;
+}
+
+
+.denemeler{
+    transform: rotate(-2.5deg);
+    /* column-width: 250px; */
+    z-index: 5;
+    width: 300px;
+    height: 190px;
+    text-align: left;
+    word-spacing: 25px;
+    margin-left: 120px;
+    font-size: 50px;
+    line-height: 70%;
+}
+
+.keypad{
+    background-image: url('img/keypad.png');
+    height: 526px;
+    width: 526px;
+    top: 250px;
+    position: absolute;
+    left: 190px;
+	z-index:99;
+}
+#keycontrols{
+	height: 290px;
+	width: 323px;
+	top: 171px;
+	position: absolute;
+	left: 111px;
+}
+#keycontrols * {
+	position: relative;
+	width: 90px;
+	height: 59px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+#key1 {
+
+	border-radius: 10px;
+}
+
+#key2 {
+
+	border-radius: 10px;
+}
+
+#key3 {
+
+	border-radius: 10px;
+}
+
+#key4 {
+	border-radius: 10px;
+	margin-top: 2px;
+}
+
+#key5 {
+	border-radius: 10px;
+}
+
+#key6 {
+	border-radius: 10px;
+	margin-left: -3px;
+}
+
+#key7 {
+	border-radius: 10px;
+	margin-top: 4px;
+}
+
+#key8{
+	border-radius: 10px;
+}
+
+#key9 {
+	border-radius: 10px;
+	margin-left: -2px;
+}
+
+#key0 {
+	border-radius: 10px;
+}
+
+.silik{
+	background: url('img/silik.png');
+}
+
+.dmg{
+	background: url('img/dmg.png');
+}
